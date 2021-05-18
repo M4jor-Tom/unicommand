@@ -6,10 +6,12 @@
 
 //Windows commands
 const std::string clearCommand = "cls";
+const std::string batteryPercentage = "powershell -command \"(Get-WmiObject Win32_Battery).EstimatedChargeRemaining\"";
 #elif defined (__linux__)
 
 //Linux commands
 const std::string clearCommand = "clear";
+const std::string batteryPercentage = "echo \"batteryPercentage undefined for linux systems.\"";
 #else
 //Error
 
